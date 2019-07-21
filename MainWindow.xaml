@@ -1,0 +1,60 @@
+﻿<Window x:Class="Text_style_setter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_style_setter"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="409.25" Width="719.452" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="448*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Stretch" Margin="0,10,0,0" VerticalAlignment="Stretch" Grid.ColumnSpan="3" >
+            <TabItem Header="Text" Margin="-2,-2,-44,0">
+                <Grid Background="#FFE5E5E5">
+                    <ScrollViewer>
+                        <TextBlock  Name="MainText" TextWrapping="Wrap" Padding="20"> 
+                         What is Scrum?
+
+Scrum is a framework that helps teams work together. Much like a rugby team (where it gets its name) training for the big game, Scrum encourages teams to learn through experiences, self-organize while working on a problem, and reflect on their wins and losses to continuously improve.
+
+While the Scrum I’m talking about is most frequently used by software development teams, its principles and lessons can be applied to all kinds of teamwork. This is one of the reasons Scrum is so popular. Often thought of as an agile project management framework, Scrum describes a set of meetings, tools, and roles that work in concert to help teams structure and manage their work.
+
+In this article, we’ll discuss how a traditional scrum framework is comprised with the help of the Scrum Guide and David West, CEO of Scrum.org. We’ll also include examples of how we see our customers stray from these fundamentals to fit their specific needs.
+                        </TextBlock>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Settings" Margin="44,-2,-92,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="47*"/>
+                        <ColumnDefinition Width="346*"/>
+                        <ColumnDefinition Width="393*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Name="backColorLabel" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="BackColor" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
+                    <Label Name="foreColorLabel" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="ForeColor" HorizontalAlignment="Stretch" Margin="10,5,0,0" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Label Name="fontSizeLabel" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="FontSize" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Label Name="fontStyleLabel" FontSize="20px" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="FontStyle" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment= "Stretch" Grid.Row="3" Grid.ColumnSpan="2" />
+
+                    <xctk:ColorPicker SelectedColorChanged="ClrPcker_BackColor_SelectedColorChanged" Grid.Column="2" Name="ClrPcker_BackColor" Grid.Row="0" Margin="10,0" ></xctk:ColorPicker >
+                    <xctk:ColorPicker SelectedColorChanged="ClrPcker_ForeColor_SelectedColorChanged" Grid.Column="2" Name="ClrPcker_ForeColor" Grid.Row="1" Margin="10,5,10,91" Grid.RowSpan="2" ></xctk:ColorPicker >
+                    <ComboBox SelectionChanged="FontSizeChoise_SelectionChanged" Name="FontSizeChoise" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,0" VerticalAlignment="Stretch"  Grid.Row="2"/>
+                    <ComboBox SelectionChanged="FontFamilyChoise_SelectionChanged" Name="FontFamilyChoise" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,0" VerticalAlignment="Stretch"  Grid.Row="3"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Name="SaveSettings" Content="Save" HorizontalAlignment="Right" VerticalAlignment="Top" Width="113" Margin="0,10,0.325,0" Height="37" Grid.Column="2" Click="SaveSettings_Click"/>
+    </Grid>
+</Window>

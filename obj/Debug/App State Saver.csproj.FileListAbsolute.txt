@@ -1,0 +1,18 @@
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\bin\Debug\Text style setter.exe.config
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\bin\Debug\Text style setter.exe
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\bin\Debug\Text style setter.pdb
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\MainWindow.g.cs
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\App.g.cs
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter_Content.g.cs
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter_MarkupCompile.cache
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter_MarkupCompile.lref
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\MainWindow.baml
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter.g.resources
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text_style_setter.Properties.Resources.resources
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\App State Saver.csproj.GenerateResource.cache
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\App State Saver.csproj.CoreCompileInputs.cache
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\App State Saver.csproj.CopyComplete
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter.exe
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\Text style setter.pdb
+C:\Users\suckt\source\repos\Test-Examples\Text style setter\obj\Debug\App State Saver.csprojAssemblyReference.cache
